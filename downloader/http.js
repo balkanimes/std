@@ -13,7 +13,7 @@ export class Http extends BaseDownloader {
       ? this.payload
       : this.payload.url;
     
-    return fetch(url, typeof this.payload === 'object' ? this.payload : null)
+    return fetch(url, typeof this.payload === 'object' ? this.payload : {})
       .then(res => new Promise((resolve, reject) => {
         if (!res.ok) {
           throw new Error(`{${res.status}} Unable to download ${url}`);
