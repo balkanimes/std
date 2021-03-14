@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/balkanimes/std/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "homepage": "https://github.com/balkanimes/std#readme",
   "dependencies": {
     "@balkanimes/daemon": "^0.1.0",
